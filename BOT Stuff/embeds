@@ -1,0 +1,9 @@
+Error Embeds:
+
+let errEmbed = new RichEmbed()
+    .setDescription(':x: **Missing argument**')
+    .addField("You're missing the ``ChannelID`` argument.", "**Usage: ``!channelinvite <channelid>``**")
+    .setColor("#e05959")
+    .setFooter(`Setnick command executed by ${message.author.username}`, `${message.author.avatarURL}`);
+
+message.channel.send(errEmbed)
